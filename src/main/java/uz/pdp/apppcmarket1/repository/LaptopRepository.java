@@ -13,4 +13,5 @@ import uz.pdp.apppcmarket1.projection.CustomLaptop;
 public interface LaptopRepository extends JpaRepository<Laptop,Integer> {
     @RestResource(path = "byName")
     Page<Laptop> findAllByName(@Param("name") String name, Pageable pageable);
+    boolean existsByName(String name);
 }

@@ -13,5 +13,5 @@ import uz.pdp.apppcmarket1.projection.CustomMonitor;
 public interface MonitorRepository extends JpaRepository<Monitor,Integer> {
     @RestResource(path = "byName")
     Page<Monitor> findAllByName(@Param("name") String name, Pageable pageable);
-
+    boolean existsByName(String name);
 }

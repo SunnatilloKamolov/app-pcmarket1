@@ -13,4 +13,5 @@ import uz.pdp.apppcmarket1.projection.CustomPrinter;
 public interface PrinterRepository extends JpaRepository<Printer,Integer> {
     @RestResource(path = "byName")
     Page<Printer> findAllByName(@Param("name") String name, Pageable pageable);
+    boolean existsByName(String name);
 }
