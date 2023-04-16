@@ -9,7 +9,7 @@ import uz.pdp.apppcmarket1.entity.template.AbsEntity;
 @Data
 @Entity
 public class Printer extends AbsEntity {
-    private String brand;//O'zgartirish
+    private String brand;//O'zgartirish gyfgfyegy
 
     private String printColor;
 
